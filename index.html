@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="starting__window">
+      <div class="game__name">XO</div>
+      <button class="btn vs__player">new game (vs PLAYER)</button>
+      <button class="btn vs__cpu">new game (vs CPU)</button>
+      <div class="choosing__mark hidden">
+        <div class="choosing__mark__label">choose your mark</div>
+        <div>
+          <button class="mark X__mark">X</button>
+          <button class="mark O__mark">O</button>
+        </div>
+        <div>Remember X goes first</div>
+      </div>
+    </div>
+
+    <main class="game__container hidden">
+      <div class="container">
+        <div class="game__name">XO</div>
+        <div class="turn__label">X's turn</div>
+        <button class="restart__btn">
+          <img
+            class="restart__img"
+            src="./reset-svgrepo-com.svg"
+            alt="Restart"
+          />
+        </button>
+        <div class="cell cell0" data-cell="0"></div>
+        <div class="cell cell1" data-cell="1"></div>
+        <div class="cell cell2" data-cell="2"></div>
+        <div class="cell cell3" data-cell="3"></div>
+        <div class="cell cell4" data-cell="4"></div>
+        <div class="cell cell5" data-cell="5"></div>
+        <div class="cell cell6" data-cell="6"></div>
+        <div class="cell cell7" data-cell="7"></div>
+        <div class="cell cell8" data-cell="8"></div>
+        <div class="result result__X">
+          X wins<br /><span class="X__wins">0</span>
+        </div>
+        <div class="result result__draw">
+          Draw <br />
+          <span class="draw">0</span>
+        </div>
+        <div class="result result__O">
+          O wins<br /><span class="O__wins">0</span>
+        </div>
+      </div>
+    </main>
+
+    <div class="window winning__window hidden">
+      <h2 class="winning__msg"></h2>
+      <div>
+        <button class="btn new__game">New Game</button>
+        <button class="btn continue__game">Next Round</button>
+      </div>
+    </div>
+    <div class="window restart__window hidden">
+      <h2 class="restart__msg">Do you want to restart the Game?</h2>
+      <div>
+        <button class="btn restart__no">No, cancel</button>
+        <button class="btn restart__yes">yes, restart</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

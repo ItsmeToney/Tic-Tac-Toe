@@ -10,3 +10,4 @@ This repository contains a web-based implementation of the classic Tic Tac Toe g
 
 ## Demo
 You can see a live demo of the game here: https://itsmetoney.github.io/Tic-Tac-Toe/
+#### Design credits:https://www.frontendmentor.io/challenges/tic-tac-toe-game-Re7ZF_E2v
